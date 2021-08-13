@@ -1,4 +1,6 @@
 .site-header{
+    position: sticky;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +13,14 @@
     align-items: center;
     justify-content: center;
     justify-content: space-around;
+}
+
+.header h1{
+    font-size: 3rem;
+}
+
+.title-color{
+    color: #675f48;
 }
 
 .site-header ul{
@@ -53,3 +63,15 @@ img{
     display: none;
 }
 
+.table-heading{
+    word-spacing: 1rem;
+    letter-spacing: 1rem;
+}
+
+.icons{
+    width: 2.5rem;
+}
+
+.taller{
+    height: 320px;
+}

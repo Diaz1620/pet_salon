@@ -170,7 +170,8 @@ function init(){
     let tweety = new Pet("Tweety",20,"Female","Bird","Feather Fluff","Old Lady","555-555-5554");
     let monty = new Pet("Monty",10,"Male","Python","De-fang","Florida Man","555-555-3333");
     salon.pets.push(scooby,scrappy,tweety,monty)
-    displayPetsTable()
+    displayPetsTable();
+    // displayPetsCard();
     displayInfo();
 }
 window.onload=init;

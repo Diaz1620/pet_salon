@@ -11,8 +11,8 @@
 <body>
     <header class="site-header">
         <div class="header">
-            <img src="pet-logo-png.png" alt="pet logo">
-            <h1>Welcome To Pet Happy Salon!</h1>
+            <img src="images/pet-logo-png.png" alt="pet logo">
+            <h1 class="title-color">Welcome To Pet Happy Salon!</h1>
         </div>
         <nav>
             <ul class="nav">
@@ -33,13 +33,72 @@
     </header>
 
     <main class="container">
-        <h1 class="display-1">Services</h1>
+        <h1 class="display-1 title-color d-flex justify-content-center">Services</h1>
+        <div class="d-flex justify-content-evenly m-2">
+            <img class="icons" src="/images/icons8-barbershop.gif" alt="brush and scissors">
+            <img class="icons" src="/images/icons8-bath-60.png" alt="bath">
+            <img class="icons" src="/images/icons8-hair-brush-50.png" alt="hair brush">
+            <img class="icons" src="/images/icons8-shampoo-60.png" alt="shampoo">
+        </div>
+        <div>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th class="d-flex justify-content-center table-heading" scope="col"><h2 class="ps-5">Grooming Services</h2></th>
+                        <th></th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">Shampoo & Brush</td>
+                        <td>Price: $0</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Bath, Brush & Haircut</td>
+                        <td>Price: $0</td>
+                    </tr>
+                </tbody>
+            <thead>
+                <tr>
+                    <th class="d-flex justify-content-center table-heading" scope="col"><h2 class="ps-5">Add-Ons</h2></th>
+                    <th></th>
+                </tr>
+                
+            </thead>
+            <tbody>
+                    <tr>
+                        <td scope="row">Anti-Parasite</td>
+                        <td>Price: $0</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Capstar Flea Treatment</td>
+                        <td>Price: $0</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Green Tea & Mint</td>
+                        <td>Price: $0</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Remoistening Therapy</td>
+                        <td>Price: $0</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Whiten & Brighten</td>
+                        <td>Price: $0</td>
+                    </tr>
+                    <tr>
+                        <td scope="row">Nail Grind, Polish, Trim</td>
+                        <td>Price: $0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
     </main>
 
-    <footer>
-
-
+    <footer id="footer-site">
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>
