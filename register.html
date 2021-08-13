@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header">
+            <img src="pet-logo-png.png" alt="pet logo">
+            <h1>Welcome To Pet Happy Salon!</h1>
+        </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="register.html">Register</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="form" class="container">
+        <h1 class="display-1">Register</h1>
+        <!-- <button onclick="hideInputs();">Hide Inputs</button> -->
+        <form class="" action="#">
+            <div id="name" class="mb-3">
+                <label class="form-label" for="petName">Name:</label>
+                <input class="form-control" type="text" name="petName" id="petName">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="petAge">Age:</label>
+                <input class="form-control" type="number" name="petAge" id="petAge">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="petGender">Gender:</label>
+                <input class="form-control" type="text" name="petGender" id="petGender">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="petBreed">Breed:</label>
+                <input class="form-control" type="text" name="petBreed" id="petBreed">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="petService">Service:</label>
+                <select class="form-select" name="perService" id="petService">
+                    <option value="full">Full Service</option>
+                    <option value="nails">Nails Cut</option>
+                    <option value="grooming">Grooming</option>
+                    <option value="de-fang">De-Fang</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="ownerName">Owner Name:</label>
+                <input class="form-control" type="text" name="ownerName" id="ownerName">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="contactPhone">Contact Number:</label>
+                <input class="form-control" type="text" name="contactPhone" id="contactPhone">
+            </div>
+        </form>
+        <div id="alert"></div>
+        <button id="register" onclick="register();" class="btn btn-primary">Register</button>
+        <div id="edit" class="d-none"></div>
+        
+
+    </main>
+    <!-- <div id="options">
+        <h3>Pick How you want pe</h3>
+        <button onclick="displayPetsCard()">Cards</button>
+        <button onclick="displayPetsTable()">Table</button>
+    </div> -->
+    <div class="container d-flex flex-column" id="pets">
+        <!-- <p>The pets are displayed here</p> -->
+        <div class="d-flex">
+            <input class="form-control w-25" type="search" name="searchPet" id="searchPet">
+            <button onclick="searchPet();" class="btn btn-primary">Search</button>
+        </div>
+        
+            <table class="table table-dark table-striped w-75">
+                <thead>
+                    <tr>
+                        <th scope="col">Pet Name</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Breed</th>
+                        <th scope="col">Owner Name</th>
+                        <th scope="col">Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                    
+                </tbody>
+            </table>
+        
+    </div>
+    <footer id="footer-site">
+
+
+    </footer>
+    <script src="app.js"></script>
+    <!-- <script src="edit.js"></script> -->
+</body>
+</html>
